@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Products</title>
+  <link rel="stylesheet" href="css/spham.css">
+</head>
+<body>
+<div class="admin-container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="img/logo.png" alt="THCompany Logo">
+      <h2>THCompany</h2>
+    </div>
+    <h3>Admin</h3>
+    <ul class="menu">
+      <li><a href="admin.html">Account</a></li>
+      <li class="active"><a href="#">Product</a></li>
+      <li><a href="donhang.html">Quản lý phòng</a></li>
+      <li><a href="thongke.html">Thống kê</a></li>
+    </ul>
+
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Header -->
+    <header class="header">
+      <div class="theme-name">Modern</div>
+    </header>
+
+    <!-- Content -->
+    <section class="content">
+      <h1>SẢN PHẨM</h1>
+      <div class="filters">
+        <div class="entries">
+          <label>Entries</label>
+          <select>
+            <option>ID</option>
+            <option>Tên Tour</option>
+            <option>Giá</option>
+          </select>
+        </div>
+        <button class="add-record">Add record</button>
+        <input type="text" placeholder="Search" class="search-bar">
+        <div class="status">
+          <label>Status</label>
+          <select>
+            <option>All</option>
+            <option>Available</option>
+            <option>Unavailable</option>
+          </select>
+        </div>
+      </div>
+      <table class="products-table">
+        <thead>
+        <tr>
+          <th>PHÒNG</th>
+          <th>GIÁ </th>
+          <th>ACTIONS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/481254746.jpg?k=0fff9d3e1974394093683f337763ea3f41a0cb904bfee8b9d220e4243f9d515b&o=&hp=1" alt="Property 6">
+            Detached Bedroom House For Sale
+          </td>
+          <td>$429,000</td>
+          <td>
+            <button>View</button>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/ks4.jpg" alt="Property 1">
+            Headland Semi Detached Bungalow To Rent          </td>
+          <td>$218,000</td>
+          <td>   <button>View</button>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/ks1.jpg" alt="Property 2">
+            Ravenslea Road Maisonette For Sale
+          </td>
+          <td>$218,000</td>
+          <td>
+            <button>View</button>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/ks5.jpg" alt="Property 3">
+            London Commercial Farm Street For Sale
+          </td>
+          <td>$563,000</td>
+
+          <td>
+            <button>View</button>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/ks2.jpg" alt="Property 4">
+            Terrace York Terraced Bungalow For Sale
+          </td>
+          <td>$578,000</td>
+          <td>
+            <button>View</button>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/282428485.jpg?k=d108e0306b707d8a81445b7a61e310e757241873f819c6f5c452ea63e4334822&o=&hp=1" alt="Property 5">
+            Detached Bedroom House For Sale
+          </td>
+          <td>>$357,000</td>
+          <td>
+            <button>View</button>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/481254746.jpg?k=0fff9d3e1974394093683f337763ea3f41a0cb904bfee8b9d220e4243f9d515b&o=&hp=1" alt="Property 6">
+            Bedroom New House For Sale
+          </td>
+          <td>$429,000</td>
+          <td>
+            <button>View</button>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="pagination">
+        <button>&lt;</button>
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>&gt;</button>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

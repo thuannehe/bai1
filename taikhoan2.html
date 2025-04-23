@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="css/taikhoan2.css">
+</head>
+<body>
+<div class="user-container">
+  <!-- Header -->
+  <header class="user-header">
+    <div class="user-info">
+      <div class="avatar">
+        <img src="avatar-placeholder.png" alt="Avatar">
+        <span>USER PHOTO</span>
+      </div>
+      <div class="details">
+        <h1>thuanhi</h1>
+        <p>Tham gia tour Hội An từ ngày trước</p>
+        <div class="social-icons">
+          <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        </div>
+      </div>
+      <div class="stats">
+        <p>Tổng: <span>2,994,000 VNĐ</span></p>
+        <p>Tổng đơn tour: <span>2</span></p>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="delete-btn">Xóa tài khoản</button>
+      <button class="reset-btn">Đặt lại mật khẩu</button>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <section class="content">
+    <div class="header-content">
+      <h2>Đơn Tour (36)</h2>
+      <div class="tabs">
+        <button class="tab active">Thông Tin Cá Nhân</button>
+        <button class="tab">Tham gia Tour</button>
+      </div>
+    </div>
+    <table class="tour-table">
+      <thead>
+      <tr>
+        <th>Mã Đơn</th>
+        <th>Trạng Thái</th>
+        <th>Ngày Đặt</th>
+        <th>Ngày Đi</th>
+        <th>Tổng Tiền</th>
+        <th>Xem Chi Tiết</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>68075d5f1e4aa23578c0a038</td>
+        <td><span class="status processing">Đang xử lý</span></td>
+        <td>16:11 Th 3, 22/4/2025</td>
+        <td>22/4/2025</td>
+        <td>1,047,000 VNĐ</td>
+        <td><button class="details-btn">Xem</button></td>
+      </tr>
+      <tr>
+        <td>6807561e4aa23578c0a03e</td>
+        <td><span class="status processing">Đang xử lý</span></td>
+        <td>16:12 Th 3, 22/4/2025</td>
+        <td>22/4/2025</td>
+        <td>1,047,000 VNĐ</td>
+        <td><button class="details-btn">Xem</button></td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="pagination">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 Tour Dự Lịch Hội An. Chính sách bảo mật | Điều khoản sử dụng</p>
+  </footer>
+</div>
+</body>
+</html>

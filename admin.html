@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - THCompany</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<div class="admin-container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="img/logo.png" alt="THCompany Logo">
+      <h2>THCompany</h2>
+    </div>
+    <h3>Admin</h3>
+    <ul class="menu">
+      <li class="active"><a href="#">Account</a></li>
+      <li><a href="sphham.html">Product</a></li>
+      <li><a href="donhang.html">Quản lý phòng</a></li>
+      <li><a href="thongke.html">Thống kê</a></li>
+    </ul>
+
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Header -->
+    <header class="header">
+      <div class="theme-name">Modern</div>
+<!--      <div class="header-actions">-->
+<!--        <span class="badge">4</span>-->
+<!--        <img src="message-icon.png" alt="Messages" class="icon">-->
+<!--        <span class="badge">3</span>-->
+<!--        <div class="company-logo">-->
+<!--          <img src="company-logo.png" alt="THCompany Logo">-->
+<!--        </div>-->
+<!--        <button class="logout-btn">Logout</button>-->
+<!--      </div>-->
+    </header>
+
+    <!-- Content -->
+    <section class="content">
+      <h1>TÀI KHOẢN</h1>
+      <div class="filters">
+        <div class="entries">
+          <label>Entries</label>
+          <select>
+            <option>ID</option>
+            <option>Username</option>
+            <option>Email</option>
+          </select>
+        </div>
+        <button class="add-record">Add record</button>
+        <input type="text" placeholder="Search" class="search-bar">
+        <div class="status">
+          <label>Status</label>
+          <select>
+            <option>All</option>
+            <option>Active</option>
+            <option>Inactive</option>
+          </select>
+        </div>
+      </div>
+      <table class="accounts-table">
+        <thead>
+        <tr>
+          <th>NGÀY</th>
+          <th>ĐIỆN THOẠI</th>
+          <th>Username</th>
+          <th>ACTIONS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>2021-07-18</td>
+          <td>03644111555</td>
+          <td>thuan123</td>
+          <td>
+            <button>View</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2020-05-20</td>
+          <td>036413209</td>
+          <td>thuan123</td>
+          <td>
+            <button>View</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2020-05-20</td>
+          <td>123945786</td>
+          <td>thuan123</td>
+          <td>
+            <button>View</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2020-05-20</td>
+          <td>036413209</td>
+          <td>THcompany</td>
+          <td>
+            <button>View</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2020-05-20</td>
+          <td>036413209</td>
+          <td>text123</td>
+          <td>
+            <button>View</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</div>
+</body>
+</html>

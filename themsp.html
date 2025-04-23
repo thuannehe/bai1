@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Add Product</title>
+  <link rel="stylesheet" href="css/themsp.css">
+</head>
+<body>
+<div class="admin-container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="logo.png" alt="THCompany Logo">
+      <h2>THCompany</h2>
+    </div>
+    <h3>Admin</h3>
+    <ul class="menu">
+      <li><a href="#">Account</a></li>
+      <li class="active"><a href="#">Product</a></li>
+      <li><a href="#">Đơn hàng</a></li>
+      <li><a href="#">Thống kê</a></li>
+    </ul>
+    <div class="admin-info">
+      <img src="admin-avatar.jpg" alt="Admin Avatar">
+      <p>thuan</p>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Header -->
+    <header class="header">
+      <div class="theme-name">Modern</div>
+      <div class="header-actions">
+        <img src="notification-icon.png" alt="Notifications" class="icon">
+        <span class="badge">4</span>
+        <img src="message-icon.png" alt="Messages" class="icon">
+        <span class="badge">3</span>
+        <div class="company-logo">
+          <img src="company-logo.png" alt="THCompany Logo">
+        </div>
+        <button class="logout-btn">Logout</button>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <section class="content">
+      <h1>Thêm sản phẩm</h1>
+      <form class="add-product-form">
+        <!-- Product Name -->
+        <div class="form-group">
+          <label for="product-name">Product name <span class="required">*</span></label>
+          <input type="text" id="product-name" placeholder="Enter product name" required>
+          <p class="note">Do not exceed 20 characters when entering the product name.</p>
+        </div>
+
+        <!-- Description -->
+        <div class="form-group">
+          <label for="description">Description <span class="required">*</span></label>
+          <div class="editor-toolbar">
+            <button type="button"><strong>B</strong></button>
+            <button type="button"><em>I</em></button>
+            <button type="button">≡</button>
+            <button type="button">≡≡</button>
+            <button type="button">?</button>
+          </div>
+          <textarea id="description" rows="5" required></textarea>
+          <p class="note">Do not exceed 100 characters per description.</p>
+        </div>
+
+        <!-- Slug -->
+        <div class="form-group">
+          <label for="slug">Slug <span class="required">*</span></label>
+          <input type="text" id="slug" required>
+        </div>
+
+        <!-- Upload Images -->
+        <div class="form-group">
+          <label>Upload images</label>
+          <div class="upload-group">
+            <input type="file" id="image1">
+            <label for="image1">Chọn tệp</label>
+            <span>Không có tệp nào được chọn</span>
+          </div>
+          <div class="upload-group">
+            <input type="file" id="image2">
+            <label for="image2">Chọn tệp</label>
+            <span>Không có tệp nào được chọn</span>
+          </div>
+          <div class="upload-group">
+            <input type="file" id="image3">
+            <label for="image3">Chọn tệp</label>
+            <span>Không có tệp nào được chọn</span>
+          </div>
+          <div class="upload-group">
+            <input type="file" id="image4">
+            <label for="image4">Chọn tệp</label>
+            <span>Không có tệp nào được chọn</span>
+          </div>
+          <p class="note">You need to add at least 4 images. Pictures must comply with the background color standards.</p>
+        </div>
+
+        <!-- Pricing -->
+        <div class="form-group">
+          <label>Pricing</label>
+          <div class="price-group">
+            <label for="base-price">Base Price <span class="required">*</span></label>
+            <input type="text" id="base-price" placeholder="Set the product price." required>
+          </div>
+          <div class="price-group">
+            <label for="child-price">Price for Children <span class="required">*</span></label>
+            <input type="text" id="child-price" placeholder="Set the product price." required>
+          </div>
+        </div>
+
+        <!-- Iframe -->
+        <div class="form-group">
+          <label for="iframe">Iframe</label>
+          <input type="text" id="iframe">
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="add-btn">Add product</button>
+      </form>
+    </section>
+  </main>
+</div>
+</body>
+</html>
